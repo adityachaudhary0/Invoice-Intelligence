@@ -16,7 +16,6 @@ venv/
 # ==========================
 # Trained ML Models
 # ==========================
-**/*.pkl
 
 # Keep model README files
 !**/models/
