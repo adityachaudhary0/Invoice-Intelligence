@@ -138,24 +138,13 @@ def render_freight_page() -> None:
     st.write("Enter invoice details to predict the expected freight cost.")
 
     with st.container():
-        col1, col2 = st.columns(2)
-
-        with col1:
-            invoice_quantity = st.number_input("Invoice Quantity", min_value=1.0, value=100.0, step=1.0)
-            invoice_dollars = st.number_input("Invoice Dollars", min_value=0.0, value=5000.0, step=100.0)
-
-        with col2:
-            days_po_to_invoice = st.number_input("Days PO to Invoice", min_value=0.0, value=5.0, step=1.0)
-            total_item_quantity = st.number_input("Total Item Quantity", min_value=0.0, value=100.0, step=1.0)
-            total_item_dollars = st.number_input("Total Item Dollars", min_value=0.0, value=5000.0, step=100.0)
+        invoice_quantity = st.number_input("Invoice Quantity", min_value=1.0, value=100.0, step=1.0)
+        invoice_dollars = st.number_input("Invoice Dollars", min_value=0.0, value=5000.0, step=100.0)
 
     if st.button("Predict Freight Cost", type="primary", use_container_width=True):
         payload = {
             "invoice_quantity": invoice_quantity,
             "invoice_dollars": invoice_dollars,
-            "days_po_to_invoice": days_po_to_invoice,
-            "total_item_quantity": total_item_quantity,
-            "total_item_dollars": total_item_dollars,
         }
 
         try:
