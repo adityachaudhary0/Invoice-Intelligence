@@ -14,10 +14,8 @@ venv/
 .ipynb_checkpoints/
 
 # ==========================
-# Trained ML Models
+# ML Models (keep README only)
 # ==========================
-
-# Keep model README files
 !**/models/
 !**/models/README.md
 
@@ -54,12 +52,10 @@ Thumbs.db
 *.log
 
 # ==========================
-# Database Backups
+# Database & Data
 # ==========================
-database_setup/*.db
-
-# Keep the main training database
-data/inventory.db
+*.db
+database_setup/
 
 
 # ==========================
