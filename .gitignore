@@ -1,0 +1,69 @@
+# ==========================
+# Python
+# ==========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+.env
+.env.*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ==========================
+# Trained ML Models
+# ==========================
+**/*.pkl
+
+# Keep model README files
+!**/models/
+!**/models/README.md
+
+# ==========================
+# Python Build Files
+# ==========================
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ==========================
+# IDEs
+# ==========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==========================
+# Operating System
+# ==========================
+.DS_Store
+Thumbs.db
+
+# ==========================
+# Streamlit Secrets
+# ==========================
+.streamlit/secrets.toml
+
+# ==========================
+# Logs
+# ==========================
+*.log
+
+# ==========================
+# Database Backups
+# ==========================
+database_setup/*.db
+
+# Keep the main training database
+data/inventory.db
+
+
+# ==========================
+# Miscellaneous
+# ==========================
+*.deb
