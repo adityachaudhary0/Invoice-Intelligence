@@ -242,8 +242,9 @@ XGBoost ✅ Selected
 | Recall | Add Result |
 | F1 Score | Add Result |
 ## 📂 Project Structure
+## Project Structure
 
-```
+```text
 project/
 ├── api/                          # FastAPI routes
 │   ├── routes/
@@ -259,12 +260,12 @@ project/
 │   └── predict_freight.py
 ├── freight_cost_prediction/      # Freight training pipeline
 │   ├── data_preprocessing.py
-│   ├── model_evalutation.py
+│   ├── model_evaluation.py
 │   ├── train.py
 │   └── models/
 ├── invoice_flagging/             # Invoice training pipeline
-│   ├── data_preproccessing.py
-│   ├── model_evalution.py
+│   ├── data_preprocessing.py
+│   ├── model_evaluation.py
 │   ├── train.py
 │   └── models/
 ├── data/                         # Training data
