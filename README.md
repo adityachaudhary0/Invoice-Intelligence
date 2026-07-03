@@ -409,13 +409,27 @@ Predict invoice risk flag (0 = normal, 1 = flagged).
 ```
 
 ## 📸 Screenshots
-- **Home Page** - (Coming soon)
-- **Freight Cost Prediction** - (Coming soon)
-- **Freight Prediction Result** - (Coming soon)
-- **Invoice Risk Prediction** - (Coming soon)
-- **Invoice Prediction Result** - (Coming soon)
-- **Swagger Documentation** - (Coming soon)
-- **Azure Container Apps Deployment** - (Coming soon)
+- **Home Page**
+  <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/bd0be486-89c3-4e8a-bbdc-0114aef66a62" />
+
+- **Freight Cost Prediction**
+  <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/d3f9d84c-2358-436c-8220-b9716449b7a9" />
+
+- **Freight Prediction Result**
+  <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/0d7c8028-c1b8-42d5-9154-14f5bf548fe4" />
+
+- **Invoice Risk Prediction**
+  <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/64e7ac50-b008-410f-95ec-b8e19bc88d92" />
+
+- **Invoice Prediction Result**
+  <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/da1224c8-333d-458c-99ce-475ba22c808d" />
+
+- **Swagger Documentation**
+  <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/ce6dd45f-f62d-49c7-9277-8482b4778997" />
+
+- **Azure Container Apps Deployment**
+  <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/b15d65f9-2dac-42e6-b59f-a4748af15d0f" />
+
 
 ## 🚀 Future Improvements
 GitHub Actions CI/CD Pipeline
