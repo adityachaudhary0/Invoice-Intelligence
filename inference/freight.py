@@ -9,10 +9,12 @@ def _build_feature_row(data: dict) -> dict:
     if quantity == 0:
         raise ValueError("Invoice quantity must be greater than zero.")
 
+    if data["Dollars"] < 0:
+        raise ValueError("Invoice dollars must be non-negative.")
+
     return {
         "Quantity": quantity,
         "Dollars": data["Dollars"],
-        "Freight_per_unit": data["Freight"] / quantity,
     }
 
 

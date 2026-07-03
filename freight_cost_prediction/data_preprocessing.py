@@ -10,7 +10,7 @@ def load_vender_invoice_data(path):
 def prepare_features(vendor_df:pd.DataFrame):
     vendor_df = vendor_df.copy()
     vendor_df["Freight_per_unit"] = vendor_df["Freight"] / vendor_df["Quantity"]
-    X = vendor_df[["Quantity", "Dollars", "Freight_per_unit"]]
+    X = vendor_df[["Quantity", "Dollars"]]
     Y = vendor_df["Freight"]
     return X, Y
 def split_data(x,y):

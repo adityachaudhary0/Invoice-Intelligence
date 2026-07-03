@@ -143,7 +143,6 @@ def render_freight_page() -> None:
         with col1:
             invoice_quantity = st.number_input("Invoice Quantity", min_value=1.0, value=100.0, step=1.0)
             invoice_dollars = st.number_input("Invoice Dollars", min_value=0.0, value=5000.0, step=100.0)
-            freight = st.number_input("Freight", min_value=0.0, value=50.0, step=1.0)
 
         with col2:
             days_po_to_invoice = st.number_input("Days PO to Invoice", min_value=0.0, value=5.0, step=1.0)
@@ -154,7 +153,6 @@ def render_freight_page() -> None:
         payload = {
             "invoice_quantity": invoice_quantity,
             "invoice_dollars": invoice_dollars,
-            "freight": freight,
             "days_po_to_invoice": days_po_to_invoice,
             "total_item_quantity": total_item_quantity,
             "total_item_dollars": total_item_dollars,

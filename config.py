@@ -14,4 +14,4 @@ INVOICE_FEATURES = [
     "Total_Item_Dollars",
 ]
 
-FREIGHT_FEATURES = ["Quantity", "Dollars", "Freight_per_unit"]
+FREIGHT_FEATURES = ["Quantity", "Dollars"]

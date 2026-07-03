@@ -1,11 +1,16 @@
 import joblib
+import sys
 from pathlib import Path
+
+if __package__ is None and __name__ == "__main__":
+    sys.path.append(str(Path(__file__).resolve().parents[1]))
+
 from freight_cost_prediction.data_preprocessing import load_vender_invoice_data,prepare_features,split_data
 from freight_cost_prediction.model_evalutation import train_linear_regression,train_Decision_tree,train_Random_Forest,train_SVM,evaluate_model
 
 def main():
     db_path="/home/adi/Documents/project/data/inventory.db"
-    model_dir=Path("models")
+    model_dir=Path(__file__).resolve().parent / "models"
     model_dir.mkdir(exist_ok=True)
 
     #load data

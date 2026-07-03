@@ -4,25 +4,6 @@ from pydantic import BaseModel, Field
 class FreightInput(BaseModel):
     invoice_quantity: float = Field(..., gt=0, description="Invoice quantity", examples=[100])
     invoice_dollars: float = Field(..., ge=0, description="Invoice dollar amount", examples=[5000.0])
-    freight: float = Field(..., ge=0, description="Actual freight amount on the invoice", examples=[50.0])
-    days_po_to_invoice: float | None = Field(
-        None,
-        ge=0,
-        description="Days between PO date and invoice date (informational)",
-        examples=[5],
-    )
-    total_item_quantity: float | None = Field(
-        None,
-        ge=0,
-        description="Total item quantity from purchase order (informational)",
-        examples=[100],
-    )
-    total_item_dollars: float | None = Field(
-        None,
-        ge=0,
-        description="Total item dollars from purchase order (informational)",
-        examples=[5000.0],
-    )
 
 
 class FreightPredictionResponse(BaseModel):

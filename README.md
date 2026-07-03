@@ -347,6 +347,18 @@ Returns API health status.
 
 Predict expected freight cost.
 
+Request body example:
+
+```json
+{
+  "invoice_quantity": 100,
+  "invoice_dollars": 5000,
+  "days_po_to_invoice": 5,
+  "total_item_quantity": 100,
+  "total_item_dollars": 5000
+}
+```
+
 ---
 
 ## POST /predict/invoice

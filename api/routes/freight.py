@@ -21,7 +21,6 @@ def predict_freight_cost(payload: FreightInput) -> FreightPredictionResponse:
             {
                 "Quantity": payload.invoice_quantity,
                 "Dollars": payload.invoice_dollars,
-                "Freight": payload.freight,
             }
         )
         return FreightPredictionResponse(**result)

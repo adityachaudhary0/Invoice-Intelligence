@@ -6,18 +6,10 @@ from inference.freight import predict_freight
 
 
 def predict_freight_cost(data: dict):
-    if "Freight_per_unit" not in data:
-        payload = {
-            "Quantity": data["Quantity"],
-            "Dollars": data["Dollars"],
-            "Freight": data.get("Freight", data["Quantity"] * data["Freight_per_unit"]),
-        }
-    else:
-        payload = {
-            "Quantity": data["Quantity"],
-            "Dollars": data["Dollars"],
-            "Freight": data["Quantity"] * data["Freight_per_unit"],
-        }
+    payload = {
+        "Quantity": data["Quantity"],
+        "Dollars": data["Dollars"],
+    }
 
     result = predict_freight(payload)
     input_df = pd.DataFrame([data])
@@ -30,5 +22,5 @@ if __name__ == "__main__":
 
     load_models()
 
-    sample = {"Quantity": 100, "Dollars": 1000, "Freight_per_unit": 10}
+    sample = {"Quantity": 100, "Dollars": 1000}
     print(predict_freight_cost(sample))
